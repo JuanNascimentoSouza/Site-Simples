@@ -3,6 +3,9 @@ main {
     width: 980px;
     position: relative;
 }
+ul{
+    padding: 0px!important;
+}
 
 .header-1 {
     background-color: #252323;
@@ -11,11 +14,13 @@ main {
 
 .header-2 {
     background-color: #ffffff;
-    width: 100%;
-    border-bottom: 3px solid #efefef;
+    width: 980px;
+    margin: 0 auto;
+    padding: 16px;
 }
 
 .logo {
+    margin-top: 10px;
     width: 70%;
     float: left;
     padding: 16px;
@@ -63,5 +68,24 @@ body {
 .busca{
     width: 20%;
     float: right;
-    margin-inline: inherit;
+}
+.col-100{
+    width: 100%;
+    float: left;
+    position: relative;
+}
+.menu-urls{
+    height: 80px;
+    border-bottom: 3px solid #efefef;
+
+}
+.busca input{
+    background-image: url('../img/lupa.png');
+    background-repeat: no-repeat;
+    background-position: 96%;
+    height: 36px;
+    padding: 12px;
+    width: 190;
+    margin-top: 4px;
+    border: 1px solid #d6d6d6
 }
