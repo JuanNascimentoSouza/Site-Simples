@@ -3,14 +3,12 @@ main {
     width: 980px;
     position: relative;
 }
-ul{
-    padding: 0px!important;
+
+ul {
+    padding: 0px !important;
 }
 
-.header-1 {
-    background-color: #252323;
-    height: 60px;
-}
+
 
 .header-2 {
     background-color: #ffffff;
@@ -20,12 +18,10 @@ ul{
 }
 
 .logo {
-    margin-top: 10px;
+    margin-top: 3px;
     width: 70%;
     float: left;
     padding: 16px;
-
-
 }
 
 body {
@@ -36,10 +32,12 @@ body {
 
 .menu-principal {
     width: 100%;
+    background-color: #252323;
+    height: 60px;
 }
 
 .redes-sociais ul li {
-    margin-left: 5px;
+    margin-left: 23px;
     display: inline-block;
     list-style: none;
 }
@@ -48,38 +46,55 @@ body {
     width: 25%;
     float: right;
 }
-.menu{
-    width: 80%;
+
+.menu {
+    width: 70%;
     float: left;
-   
+
 }
+
 .menu ul li {
     display: inline-block;
     color: #818181;
     margin-left: 15px;
+    height: 48px;
 }
-.menu ul li a{
+
+.menu ul li:hover {
+    border-bottom: 2px solid #00bac6;
+
+}
+
+.menu ul li a {
     color: #818181;
     font-size: 18px;
     text-decoration: none;
     text-transform: uppercase;
     padding: 10px;
 }
-.busca{
-    width: 20%;
+
+.menu ul li a:hover {
+    color: #00bac6;
+}
+
+.busca {
+    width: 24%;
     float: right;
 }
-.col-100{
+
+.col-100 {
     width: 100%;
     float: left;
     position: relative;
 }
-.menu-urls{
+
+.menu-urls {
     height: 80px;
     border-bottom: 3px solid #efefef;
 
 }
-.busca input{
+
+.busca input {
     background-image: url('../img/lupa.png');
     background-repeat: no-repeat;
     background-position: 96%;
