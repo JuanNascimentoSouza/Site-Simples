@@ -2,7 +2,7 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="./css/main.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./css/slick-1.8.1/" />
     <title>Site Simples</title>
 </head>
 
@@ -42,16 +42,42 @@
         </div>
     </main>
     <div class="col-100">
-        <div class="slider-principal">
-            <img src="./img/banner.png" />
-            <img src="./img/banner.png" />
-            <img src="./img/banner.png" />
+        <div class="slider-principal fade">
+          <img src="./img/banner.png" style="width:100%"></div>
+        <div class="slider-principal fade">
+          <img src="./img/banner2.png" style="width:100%"></div>
+        <div class="slider-principal fade">
+          <img src="./img/banner3.jpg" style="width:100%"></div>
         </div>
-    </div>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script type="text/javascript" src="./js/main.js"></script>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("slider-principal");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
 </body>
 
 </html>
