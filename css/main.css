@@ -171,13 +171,10 @@ body {
 
 .col-3 {
     text-align: center;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 29%;
+    width: 33%;
     float: left;
     position: relative;
     top: 150px;
-
 }
 
 .col-3 strong {
@@ -192,4 +189,34 @@ body {
 .col-3 p {
     color: #9a9a9a;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.shape{
+    width: 100%;
+    top: 150px;
+    position: relative;
+    z-index: 1;
+    right: 5px;
+}
+
+.col-5 strong {
+    color: #818181;
+    font-family: sans-serif;
+}
+.col-5{
+    color: #9a9a9a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.col-5 p {
+    color: #9a9a9a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.col-5 {
+    text-align: center;
+    width: 33%;
+    float: left;
+    position: relative;
+    bottom: 500px;
+    z-index: 2;
 }
